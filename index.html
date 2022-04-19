@@ -5,17 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+  <div class="card">
+    <img class="card__image" src="/images/image-equilibrium.jpg" alt="">
+    <section class="card__content">
+      <h1 class="card__title">Equilibrium #3429</h1>
+      <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="card__info">
+        <p class="info__item eth">
+          <img src="/images/icon-ethereum.svg" alt="">
+          0.041 ETH
+        </p>
+        <p class="info__item days"> 
+          <img src="/images/icon-clock.svg" alt="">
+          3 days left
+        </p>
+      </div>
+      <hr>
+      <div class="card__footer">
+        <img class="footer__avatar" src="./images/image-avatar.png" alt="">
+        <p class="footer__info">Creation of <span class="creator">Jules Wyvern</span></p>
+      </div>
+    </section>
+  </div>
 
 </body>
 </html>
